@@ -1,20 +1,14 @@
-import {Fragment} from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import {Header} from './components'
 
 const App = () => {
   return (
-    <section className='h-screen w-full mx-auto px-5'>
-    <header>
-    <Header/>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Header/>}/>
+    </Routes>
+    </BrowserRouter>
     
-      </section>
       )
 }
 
