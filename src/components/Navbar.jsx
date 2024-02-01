@@ -7,8 +7,8 @@ const Navbar = () => {
     <div className="flex justify-between px-4 items-center bg-primary bg-opacity-90">
       <img className="w-[80px] h-[80px]" src="/public/logo.png" />
       <div className="text-white">
-      <FiAlignJustify className="cursor-pointer text-5xl" onClick={()=> setOpen(!open)}/>
-        <ul className="md:flex gap-5 sm:hidden">
+      <FiAlignJustify className="cursor-pointer text-5xl md:hidden" onClick={()=> setOpen(!open)}/>
+        <ul className="md:flex gap-9 hidden mr-10">
           <li className="link_hover ">
             <a href="#">Home</a>
           </li>
@@ -26,8 +26,8 @@ const Navbar = () => {
       </div>
       {
         open && (
-            <div className="fixed top-0 h-[100%] left-0 w-[100%] bg-black bg-opacity-80 ">
-                 <ul className="flex flex-col gap-5 justify-center items-center h-full ">
+            <div className="fixed top-0 h-[100%] left-0 w-[100%] bg-black bg-opacity-80 transition-all" onClick={()=> setOpen(!open)}>
+                 <ul className="flex flex-col gap-5 justify-center items-center h-full w-full ">
           <li className="link_hover ">
             <a href="#">Home</a>
           </li>

@@ -1,9 +1,11 @@
-import {Header} from './components'
+import {Header, Foods} from './components'
 
 const App = () => {
   return (
     <>
     <Header/>
+    <Foods/>
+
     </>
   )
 }

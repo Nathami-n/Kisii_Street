@@ -11,7 +11,7 @@ export default {
     },
     backgroundColor: {
       primary:"#000000"
-    }
+    },
     color: {
       golden: "#fcec14f3"
     }
