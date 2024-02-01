@@ -4,5 +4,8 @@
 @tailwind utilities;
 
 a{
- @apply font-custom font-bold text-gray-400
+ @apply text-white font-bold 
+}
+.link_hover {
+    @apply hover:border-b-2 hover:border-white transition-all
 }

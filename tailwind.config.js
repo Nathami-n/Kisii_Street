@@ -9,6 +9,12 @@ export default {
       fontFamily:{
       custom:['Nunito']
     },
+    backgroundColor: {
+      primary:"#000000"
+    }
+    color: {
+      golden: "#fcec14f3"
+    }
   },
 },
   plugins: [],
