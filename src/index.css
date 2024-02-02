@@ -4,8 +4,11 @@
 @tailwind utilities;
 
 a{
- @apply text-[#fcec14f3] font-bold  
+ @apply  text-gray-300 font-custom 
 }
 .link_hover {
     @apply hover:border-b-2 hover:border-white transition-all
+}
+.social {
+    @apply bg-amber-500 rounded-full cursor-pointer text-white w-7 h-7 px-1
 }

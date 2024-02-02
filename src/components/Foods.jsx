@@ -1,8 +1,16 @@
-import React from 'react'
+import{FoodCard} from './'
 
 const Foods = () => {
   return (
-    <div>Foods</div>
+    <div className='flex flex-wrap gap-4 bg-primary'>
+      <FoodCard/>
+      <FoodCard/>
+      <FoodCard/>
+      <FoodCard/>
+      <FoodCard/>
+      <FoodCard/>
+      <FoodCard/>
+    </div>
   )
 }
 

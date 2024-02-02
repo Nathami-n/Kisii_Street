@@ -1,51 +1,34 @@
-import React, { useState } from "react";
-import { FiAlignJustify } from "react-icons/fi";
+import {CiFacebook, CiInstagram, CiTwitter} from 'react-icons/ci'
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false)
   return (
-    <div className="flex justify-between px-4 items-center bg-primary bg-opacity-90">
-      <img className="w-[80px] h-[80px]" src="/public/logo.png" />
-      <div className="text-white">
-      <FiAlignJustify className="cursor-pointer text-5xl md:hidden" onClick={()=> setOpen(!open)}/>
-        <ul className="md:flex gap-9 hidden mr-10">
-          <li className="link_hover ">
-            <a href="#">Home</a>
+    <nav className="flex items-center px-9 py-3 shadow-lg">
+      <div className="mr-[5%]">
+        <h1 className=" text-2xl text-amber-500 whitespace-nowrap font-bold">VEGAN CLUB</h1>
+      </div>
+      <div className=" border-r-4 h-8 border-r-gray-600 mr-[2%] hidden md:block" />
+      <div className="mr-auto hidden md:block">
+        <ul className="flex lg:gap-9 md:gap-7 xl:gap-20">
+          <li>
+            <a href="">HOME</a>
           </li>
           <li>
-            <a className="link_hover" href="#">
-              Menu
-            </a>
+            <a href="">MENU</a>
           </li>
           <li>
-            <a className="link_hover" href="#">
-              Contact
-            </a>
+            <a href="">PROMOS</a>
+          </li>
+          <li>
+            <a className='whitespace-nowrap' href="">ABOUT US</a>
           </li>
         </ul>
       </div>
-      {
-        open && (
-            <div className="fixed top-0 h-[100%] left-0 w-[100%] bg-black bg-opacity-80 transition-all" onClick={()=> setOpen(!open)}>
-                 <ul className="flex flex-col gap-5 justify-center items-center h-full w-full ">
-          <li className="link_hover ">
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a className="link_hover" href="#">
-              Menu
-            </a>
-          </li>
-          <li>
-            <a className="link_hover" href="#">
-              Contact
-            </a>
-          </li>
-        </ul>
-            </div>
-        )
-      }
-    </div>
+      <div className="md:flex gap-7 hidden">
+       <CiTwitter className='social'/>
+       <CiInstagram className='social'/>
+       <CiFacebook className='social'/>
+      </div>
+    </nav>
   );
 };
 

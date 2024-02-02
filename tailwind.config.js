@@ -10,10 +10,13 @@ export default {
       custom:['Nunito']
     },
     backgroundColor: {
-      primary:"#000000"
+      primary:"#0c0c0c"
     },
     color: {
       golden: "#fcec14f3"
+    },
+    backgroundImage: {
+      hero:"url('/bg0-img.jpg')"
     }
   },
 },
