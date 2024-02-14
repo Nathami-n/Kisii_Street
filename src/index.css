@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 a{
- @apply  text-gray-300 font-custom 
+ @apply  md:text-gray-300 font-custom sm:text-white sm:font-bold  
 }
 .link_hover {
     @apply hover:border-b-2 hover:border-white transition-all

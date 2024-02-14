@@ -1,12 +1,11 @@
 import {Header, Foods} from './components'
+import FoodContextProvider from './utils/foodsContext'
 
 const App = () => {
   return (
-    <>
-    <Header/>
-    {/* <Foods/> */}
-
-    </>
+    <FoodContextProvider>
+      <Header/>
+    </FoodContextProvider>
   )
 }
 
