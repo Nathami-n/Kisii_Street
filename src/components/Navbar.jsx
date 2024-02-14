@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { CiFacebook, CiInstagram, CiTwitter } from "react-icons/ci";
-import { FaHamburger } from "react-icons/fa";
+import { CiFacebook, CiFries, CiInstagram, CiTwitter } from "react-icons/ci";
+import { FaHamburger} from "react-icons/fa";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -47,7 +47,9 @@ const Navbar = () => {
           onClick={openMenu}
           className="bg-black absolute top-0 right-0 left-0 h-screen opacity-90 transition-all flex flex-col gap-6 justify-center items-center"
         >
-          <ul className=" flex flex-col gap-3 items-center justify-center">
+          <CiFries className="bg-orange-400 rounded-full text-3xl p-1 absolute top-4 right-7 cursor-pointer"/>
+          
+          <ul className="flex flex-col gap-2 justify-center items-center">
             <li>
               <a href="">HOME</a>
             </li>
