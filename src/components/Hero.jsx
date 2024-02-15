@@ -1,3 +1,4 @@
+import {Foods} from './'
 const Hero = () => {
   return (
     <section className="h-full max-w-[1040px] sm:p-5 md:p-3 md:mx-auto">
@@ -17,12 +18,14 @@ const Hero = () => {
         </div>
         <div>
           <img
-            className=" w-full h-full object-contain mt-4 "
+            className=" w-full h-full object-contain mt-4 transtion-all"
             src="/burger2.jpg"
             alt="burger image"
           />
         </div>
       </div>
+     
+       <Foods/>
     </section>
   );
 };

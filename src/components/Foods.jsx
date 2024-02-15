@@ -1,16 +1,20 @@
 import{FoodCard} from './'
+import {foodContext} from '../utils/foodsContext'
+import {useContext} from 'react'
 
 const Foods = () => {
+  const {foods} = useContext(foodContext)
+  console.log(foods)
   return (
-    <div className='flex flex-wrap gap-4 bg-primary'>
-      <FoodCard/>
-      <FoodCard/>
-      <FoodCard/>
-      <FoodCard/>
-      <FoodCard/>
-      <FoodCard/>
-      <FoodCard/>
-    </div>
+    <section className='flex flex-col items-center justify-center mt-4 md:flex-row md:flex-wrap md:mt-7'>
+     {foods.map((item, i)=> {
+      return(
+        
+          <FoodCard key={i} item={item}/>
+      )
+     })}
+
+    </section>
   )
 }
 

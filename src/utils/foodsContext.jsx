@@ -1,11 +1,15 @@
-import { createContext, useState} from "react";
+import { createContext, useState, useEffect} from "react";
+import {items} from '../utils/foods'
 
-const foodContext = createContext();
+export const foodContext = createContext();
 
 const FoodContextProvider = ({children}) => { 
-    const [foods, setFoods] = useState([{name: 'ugali', price:'20'}])
+    useEffect(()=>{
+        localStorage.setItem('foods', JSON.stringify(items))
+    },[])
+    const [foods, setFoods] = useState(JSON.parse(localStorage.getItem('foods'))|| [])
     return (
-        <foodContext.Provider value={foods} >
+        <foodContext.Provider value={{foods, setFoods}} >
             {children}
         </foodContext.Provider>
     )
