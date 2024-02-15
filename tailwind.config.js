@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-      custom:['Nunito']
+      custom:['Nunito'],
     },
     backgroundColor: {
       primary:"#0c0c0c"

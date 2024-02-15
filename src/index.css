@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-a{
- @apply  md:text-gray-300 font-custom sm:text-white sm:font-bold text-white font-bold 
+a {
+  @apply md:text-gray-300 font-custom sm:text-white sm:font-bold text-white font-bold;
 }
 .link_hover {
-    @apply hover:border-b-2 hover:border-white transition-all
+  @apply hover:border-b-2 hover:border-white transition-all;
 }
 .social {
-    @apply bg-amber-500 rounded-full cursor-pointer text-white w-7 h-7 px-1
+  @apply bg-amber-500 rounded-full cursor-pointer text-white w-7 h-7 px-1;
+}
+
+.button {
+  @apply transition-all shadow-lg hover:scale-105 rounded-full w-[100px] h-[30px] bg-orange-400 text-white p-1;
 }
